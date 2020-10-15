@@ -1,0 +1,106 @@
+    body {
+        font-family: 'Futura','Arial Black', Helvetica, sans-serif;
+        font-size: small;
+    }
+    
+    .row {
+    text-align: center;
+    align-content: center;
+    outline: 2px solid black;
+}
+
+    h5 {
+    font-family: 'Futura','Arial Black', Helvetica, sans-serif;
+    color: black;
+    text-align: center;
+}
+    h2 {
+    font-family: 'Futura','Arial Black', Helvetica, sans-serif;
+    color: black;
+    text-align: center;
+    }
+  
+    #search {
+    font-family: 'Futura','Arial Black', Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    color: black;
+    align-content: center;
+    padding-top: 10px;
+}
+  
+    ul {
+    font-family: 'Futura','Arial Black', Helvetica, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    list-style-type: none;
+    padding: 10px;
+    float: center;
+}
+  
+  ul li {
+    font-family: 'Futura','Arial Black', Helvetica, sans-serif;
+    font-size: medium;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: lightgray;
+    opacity: 0.8;
+}
+
+.btn {
+    margin: 10px;
+}
+  
+.column {
+    float: left;
+    width: 50%;
+  }
+  
+  .row:after {
+    display: table;
+}
+
+    input {
+    border: 2px solid white;
+    border-radius: 4px;
+    width: 45%;
+    height: 25px;
+}
+
+    input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px black; 
+}
+
+.message {
+    display: none;
+}
+
+input[type=checkbox]:checked ~ .message {
+    display: block;
+}
+
+ ::ng-deep .mat-checkbox-checked .mat-checkbox-background, .mat-checkbox-indeterminate .mat-checkbox-background {
+    background-color: black !important;
+}
+
+::ng-deep .mat-checkbox:not(.mat-checkbox-disabled) .mat-checkbox-ripple .mat-ripple-element {
+    background-color: black !important;
+}
+
+.box {
+    display: none;
+    background: #ccc;
+    width: 200px;
+    height: 100px;
+  }
+
+  #goodMovie {
+    position: fixed;
+    padding-top: 10px;
+    padding-left: 150px;
+    padding-bottom: 50px;
+  }

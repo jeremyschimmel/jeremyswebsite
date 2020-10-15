@@ -1,0 +1,60 @@
+h1 {
+    font-family: 'Futura', 'Arial Black', Arial, sans-serif;
+    color: black;
+}
+
+router-outlet {
+    text-align: center;
+    font-family: 'Futura', 'Arial Black', Arial, sans-serif;
+}
+
+#header {
+    font-family: 'Futura', 'Arial Black', Arial, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+    border-right: 1px solid #bbb;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+  }
+
+  li:last-child {
+    border-right: none;
+  }
+  
+li a:hover {
+    background-color: gray;
+    cursor: pointer;
+  }
+
+  .active {
+    background-color: black;
+  }
+
+  .fa-linkedin {
+    padding: 20px;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    background: #007bb5;
+    color: white;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}

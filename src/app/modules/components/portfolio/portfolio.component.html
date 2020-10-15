@@ -1,0 +1,41 @@
+<h5>This is an example of an Angular web app I created, which implements the IMDb API.</h5>
+<h2>"Movie Buff"</h2>
+<div class="row">
+    <div class="column">
+            <div id="search">
+                <h3>What movie do you like?</h3>
+                    <input [(ngModel)]="title" placeholder="Enter Movie Title..."
+                    class="text" style="width:75%"/>
+                    <br><br>
+                    <button (click)="searchMovie(title)" 
+                    class="btn btn-secondary">Search</button>
+                <br><br>
+            </div>
+            <div id="lists">
+                <ul class="list-group">
+                    <li class="list-group-item" *ngFor="let movie of result.Search">
+                        <a href="http://imdb.com/title/{{movie.imdbID}}" target="_blank" style="color: black">
+                        <img src="{{movie.Poster}}" class="thumbnail" height="100" width="75"><br>
+                        {{movie.Title}} ({{movie.Year}})
+                    </a>
+                    <br>
+                    <div>
+                        <button type="button" (click)="toggleDisplayDivIf()"
+                        class="btn btn-secondary"> I like this movie! </button> 
+                        <button type="button" (click)="toggleDisplayDivIf()"
+                        class="btn btn-secondary"> Nevermind </button>
+                    </div>
+                    </li>
+                </ul>
+            </div>
+    </div>
+    <div class="column">
+            <div *ngIf="!isShowDivIf">
+                <div id="goodMovie">
+            <h3>Hey, that's a good movie!</h3>
+            <img src="https://media.giphy.com/media/F56tNEGsltde/giphy.gif" height="300" width="200"/>
+                </div>
+            </div>
+    </div>
+</div>
+

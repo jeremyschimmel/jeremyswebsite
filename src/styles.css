@@ -1,0 +1,18 @@
+body {
+    color: black;
+    font-family: 'Futura', 'Arial Narrow', Arial, sans-serif;
+    background-image: url(./assets/images/grayblur.png);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+html, body { 
+    height: 100%; 
+}
+
+body { 
+    margin: 0; font-family: 'Futura', 'Arial Narrow', 'Arial, sans-serif';
+ }
